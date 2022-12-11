@@ -16,7 +16,7 @@ export function useTranslate(text: string, from: string, to: string) {
             }
 
             try {
-                const res = await fetch("http://phibar.one:5000/translate", {
+                const res = await fetch("http://translate.phibar.one/translate", {
                     method: "POST",
                     body: JSON.stringify({
                         q: text,
